@@ -1,0 +1,35 @@
+.desktop-menu{
+  padding: 1rem 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+.desktop-menu__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desktop-menu__links > ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.desktop-menu__social > ul {
+  display: flex;
+  gap: 1rem;
+}
+.mobile-logo{
+  display: none;
+}
+
+/*only medias*/
+@media (max-width: 900px){
+  .mobile-logo{
+    display: block;
+  }
+  .desktop-logo {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+ .desktop-menu__links {
+  display: none;
+ }
+}
