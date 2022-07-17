@@ -1,5 +1,6 @@
-body {
-  background: #F7F5F4;
+.home-contact {
+  background: #363636;
+  padding: 54px 0;
 }
 .contact-container {
   display: grid;
@@ -11,7 +12,7 @@ body {
   margin-top:  48px;
 }
 .contact-description__title {
-  color: #E20C32;
+  color: #fff;
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;

@@ -5,10 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--CSS-->
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/home-contact.css">
   <!--CSS end-->
   <title>Anna</title>
 </head>
@@ -80,7 +84,7 @@
     </header>
 
     <main class="slider">
-        
+
     </main>
 
     <section class="testimonials">
@@ -231,5 +235,39 @@
         </div>
       </div>
     </section>
+    <section class="home-contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-description">
+            <h1 class="contact-description__title"> Lets create <br> memories together </h1>
+            <p class="contact-description__paragraph">Together we will record your children's growth <br>
+              as well as yours, allowing you and yours  to be yourself <br> during photo shoots and feel free to express the true emotion <br> of the moment.</p>
+          </div>
+          <div class="contact-form">
+            <form action="https://formsubmit.co/vitorvitorgregorio@gmail.com" method="POST">
+              <h2 class="form-title"> Contact with me </h2>
+              <input type="text" name="name" required placeholder="Name">
+              <input type="email" name="email" required placeholder="Email">
+              <textarea placeholder="Describe what services are you interested in booking" class="form-control" name="message" required></textarea>
+              
+                <button type="submit" class="first-btn">
+                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.41699 13.667C1.93099 13.667 1.51766 13.4967 1.17699 13.156C0.836992 12.816 0.666992 12.403 0.666992 11.917V2.08301C0.666992 1.59701 0.836992 1.18401 1.17699 0.844008C1.51766 0.503341 1.93099 0.333008 2.41699 0.333008H15.583C16.069 0.333008 16.4823 0.503341 16.823 0.844008C17.163 1.18401 17.333 1.59701 17.333 2.08301V11.917C17.333 12.403 17.163 12.816 16.823 13.156C16.4823 13.4967 16.069 13.667 15.583 13.667H2.41699ZM8.99999 7.93801L2.41699 3.83301V11.917H15.583V3.83301L8.99999 7.93801ZM8.99999 6.20801L15.625 2.08301H2.39599L8.99999 6.20801ZM2.41699 11.917C2.43099 11.917 2.43799 11.917 2.43799 11.917H2.41699Z" fill="white"/>
+                    </svg>
+                   Send
+                  </button>
+                
+        
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/tks.html">
+         </form>
+          </div>
+        </div>
+      </div>
+      <img src="images/seta.svg" alt="" class="img-fluid seta">
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
