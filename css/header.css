@@ -1,48 +1,75 @@
-.desktop-menu{
-  padding: 1rem 0;
-  border-bottom: 1px solid #E9E9E9;
-}
-.desktop-menu__navbar {
+.menu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
 }
-.desktop-menu__links > ul {
+.nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 40px;
 }
-.desktop-menu__social > ul {
+.social-links{
   display: flex;
   gap: 1rem;
-  align-items: center;
-}
-.desktop-menu__social > ul > li > a {
-  background-color: #e9e9e9;
-  display: flex;
-  align-items: center;
-  border-radius: 50%;
-  padding: 10px;
-  
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-.mobile-logo{
-  display: none;
 }
 
-/*only medias*/
-@media (max-width: 900px){
-  .mobile-logo{
-    display: block;
-  }
-  .desktop-logo {
-    display: none;
-  }
-}
-@media (max-width: 768px){
- .desktop-menu__links {
+.hamburguer {
   display: none;
- }
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  background-color: #2B2B2B;
+}
+
+@media (max-width: 768px){
+    .hamburguer {
+      display: block;
+    }
+  
+    .hamburguer.active .bar:nth-child(1) {
+      transform: translateY(4px) rotate(45deg);
+      -webkit-transform: translateY(4px) rotate(45deg);
+      -moz-transform: translateY(4px) rotate(45deg);
+      -ms-transform: translateY(4px) rotate(45deg);
+      -o-transform: translateY(4px) rotate(45deg);
+}
+    .hamburguer.active .bar:nth-child(2) {
+      transform: translateY(-4px) rotate(-45deg);
+      -webkit-transform: translateY(-4px) rotate(-45deg);
+      -moz-transform: translateY(-4px) rotate(-45deg);
+      -ms-transform: translateY(-4px) rotate(-45deg);
+      -o-transform: translateY(-4px) rotate(-45deg);
+}
+    .nav-links {
+      position: fixed;
+      left: 0;
+      top: -100%;
+      gap: 0;
+      flex-direction: column;
+      background-color: #F0EEED;
+      width: 100%;
+      height: 80vh;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -ms-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      overflow: hidden;
+    }
+    .menu-link {
+      margin: 40px 0;
+    }
+    .nav-links.active {
+      top: 70px;
+    }
 }
