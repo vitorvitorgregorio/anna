@@ -18,3 +18,26 @@
   font-weight: 500;
   font-size: 16px;
 }
+.second-btn {
+  color: #E20C32;
+  background-color: #E20C321A;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  min-width: 170px;
+}
+.second-btn:hover {
+  background-color: #E20C32;
+  color: #fff;
+}

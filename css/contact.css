@@ -67,7 +67,10 @@ textarea {
 button {
   margin-top: 16px;
 }
-
+.seta {
+  position: relative;
+  bottom: 100px;
+}
 @media only screen and (max-width: 768px){
   .contact-container {
     grid-template-columns: 1fr;

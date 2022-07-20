@@ -7,12 +7,35 @@
 .nav-links {
   display: flex;
   gap: 40px;
+  align-items: baseline;
 }
 .social-links{
   display: flex;
   gap: 1rem;
 }
-
+.social-icon{
+  background-color: #F0EEED;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+}
+.social-icon:hover,
+.social-icon:hover svg path {
+  background-color: #E20C321A;
+  fill: #E20C32;
+}
 .hamburguer {
   display: none;
   cursor: pointer;
