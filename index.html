@@ -7,7 +7,12 @@
   <!--CSS-->
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/header.css">
@@ -41,28 +46,28 @@
               <a class="menu-link" href="galery.html" title="galery"> Galery </a>
             </li>
             <li class="nav-item">
-              <a class="primary-button menu-link" href="contact.html"> Book your session </a>
+              <a class="second-btn menu-link" href="contact.html"> Book your session </a>
             </li>
           </ul>
         
         
           <ul class="social-links">
             <li class="nav-item">
-              <a class="social-insta" href="#instagram">
+              <a class="social-insta social-icon" href="#instagram">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00069 0.466797C6.68315 0.466797 6.3923 0.47693 5.48207 0.518353C4.57362 0.559953 3.95352 0.703777 3.41094 0.914802C2.84969 1.13276 2.37359 1.42432 1.89928 1.89881C1.42461 2.37313 1.13305 2.84922 0.91438 3.41029C0.702822 3.95305 0.55882 4.57333 0.517931 5.48143C0.47722 6.39166 0.466553 6.68268 0.466553 9.00022C0.466553 11.3178 0.476864 11.6077 0.518109 12.5179C0.559887 13.4264 0.703711 14.0465 0.914557 14.5891C1.13269 15.1503 1.42425 15.6264 1.89875 16.1007C2.37288 16.5754 2.84898 16.8677 3.40987 17.0856C3.95281 17.2967 4.57308 17.4405 5.48136 17.4821C6.39159 17.5235 6.68226 17.5336 8.99962 17.5336C11.3173 17.5336 11.6073 17.5235 12.5175 17.4821C13.426 17.4405 14.0468 17.2967 14.5897 17.0856C15.1508 16.8677 15.6262 16.5754 16.1003 16.1007C16.575 15.6264 16.8665 15.1503 17.0852 14.5893C17.295 14.0465 17.439 13.4262 17.4817 12.5181C17.5226 11.6079 17.5332 11.3178 17.5332 9.00022C17.5332 6.68268 17.5226 6.39184 17.4817 5.4816C17.439 4.57315 17.295 3.95306 17.0852 3.41047C16.8665 2.84922 16.575 2.37313 16.1003 1.89881C15.6256 1.42414 15.151 1.13258 14.5892 0.914802C14.0452 0.703777 13.4247 0.559953 12.5163 0.518353C11.606 0.47693 11.3163 0.466797 8.99802 0.466797H9.00069ZM8.23513 2.00457C8.46233 2.00421 8.71585 2.00457 9.00065 2.00457C11.2791 2.00457 11.5491 2.01274 12.4489 2.05363C13.2809 2.09168 13.7324 2.2307 14.0332 2.3475C14.4315 2.50217 14.7154 2.68706 15.0139 2.98573C15.3125 3.2844 15.4974 3.56885 15.6525 3.96708C15.7693 4.26752 15.9085 4.71908 15.9463 5.55109C15.9872 6.45066 15.9961 6.72088 15.9961 8.99824C15.9961 11.2756 15.9872 11.5458 15.9463 12.4454C15.9083 13.2774 15.7693 13.729 15.6525 14.0294C15.4978 14.4276 15.3125 14.7112 15.0139 15.0097C14.7152 15.3084 14.4316 15.4932 14.0332 15.6479C13.7328 15.7652 13.2809 15.9039 12.4489 15.942C11.5493 15.9828 11.2791 15.9917 9.00065 15.9917C6.72205 15.9917 6.452 15.9828 5.55244 15.942C4.72043 15.9036 4.26887 15.7645 3.96789 15.6477C3.56966 15.4931 3.28521 15.3082 2.98654 15.0095C2.68787 14.7108 2.50298 14.4271 2.34796 14.0287C2.23116 13.7282 2.09196 13.2767 2.05409 12.4447C2.0132 11.5451 2.00502 11.2749 2.00502 8.99611C2.00502 6.71733 2.0132 6.44852 2.05409 5.54896C2.09213 4.71695 2.23116 4.26539 2.34796 3.96459C2.50263 3.56636 2.68787 3.28191 2.98654 2.98324C3.28521 2.68457 3.56966 2.49968 3.96789 2.34466C4.26869 2.22732 4.72043 2.08866 5.55244 2.05043C6.33964 2.01488 6.64471 2.00421 8.23513 2.00243V2.00457ZM13.5557 3.42147C12.9904 3.42147 12.5317 3.87961 12.5317 4.44513C12.5317 5.01047 12.9904 5.46914 13.5557 5.46914C14.1211 5.46914 14.5797 5.01047 14.5797 4.44513C14.5797 3.87979 14.1211 3.42147 13.5557 3.42147ZM9.0007 4.61793C6.58059 4.61793 4.61843 6.58008 4.61843 9.0002C4.61843 11.4203 6.58059 13.3816 9.0007 13.3816C11.4208 13.3816 13.3823 11.4203 13.3823 9.0002C13.3823 6.58008 11.4208 4.61793 9.0007 4.61793ZM9.00067 6.15572C10.5715 6.15572 11.8451 7.42916 11.8451 9.0002C11.8451 10.5711 10.5715 11.8447 9.00067 11.8447C7.42963 11.8447 6.15619 10.5711 6.15619 9.0002C6.15619 7.42916 7.42963 6.15572 9.00067 6.15572Z" fill="#2B2B2B"/>
                   </svg>
               </a>
             </li>
             <li class="nav-item">
-              <a class="social-twitter" href="#twitter">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social-twitter social-icon" href="#twitter">
+                <svg width="18" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5208 4.00461L7.55438 4.55825L6.99479 4.49045C4.95791 4.23058 3.17843 3.34929 1.66756 1.86916L0.928908 1.13474L0.73865 1.67708C0.33575 2.88604 0.593158 4.16279 1.43253 5.02149C1.8802 5.49604 1.77948 5.56383 1.00725 5.28136C0.73865 5.19097 0.503625 5.12318 0.481242 5.15708C0.4029 5.23617 0.6715 6.26435 0.884142 6.6711C1.17513 7.23604 1.76828 7.78967 2.4174 8.11734L2.96579 8.37721L2.31668 8.3885C1.68994 8.3885 1.66756 8.3998 1.73471 8.63708C1.95854 9.37149 2.84268 10.1511 3.82755 10.4901L4.52143 10.7273L3.91708 11.0889C3.02175 11.6086 1.96973 11.9024 0.917717 11.925C0.414092 11.9363 0 11.9815 0 12.0154C0 12.1284 1.36538 12.7611 2.15999 13.0097C4.54382 13.7441 7.37531 13.4277 9.50173 12.1736C11.0126 11.281 12.5235 9.50708 13.2286 7.78967C13.6091 6.87448 13.9896 5.20227 13.9896 4.40006C13.9896 3.88032 14.0232 3.81253 14.6499 3.1911C15.0192 2.82955 15.3662 2.43409 15.4333 2.3211C15.5452 2.10643 15.534 2.10643 14.9633 2.29851C14.012 2.63747 13.8777 2.59227 14.3477 2.08383C14.6947 1.72227 15.1088 1.06695 15.1088 0.874871C15.1088 0.840975 14.9409 0.897468 14.7506 0.999157C14.5492 1.11214 14.1015 1.28162 13.7658 1.38331L13.1614 1.57539L12.613 1.20253C12.3108 0.999157 11.8856 0.773183 11.6617 0.705391C11.0909 0.547209 10.218 0.569806 9.70318 0.750585C8.30422 1.25903 7.42008 2.56968 7.5208 4.00461Z" fill="#2B2B2B"/>
                   </svg>
               </a>
             </li>
             <li class="nav-item">
-              <a class="social-youtube" href="#youtube">
+              <a class="social-youtube social-icon" href="#youtube">
                 <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6679 0.500008C16.4022 0.701518 16.9805 1.29526 17.1768 2.04927C17.5335 3.41581 17.5335 6.26712 17.5335 6.26712C17.5335 6.26712 17.5335 9.11833 17.1768 10.485C16.9805 11.239 16.4022 11.8327 15.6679 12.0343C14.3371 12.4005 9.00013 12.4005 9.00013 12.4005C9.00013 12.4005 3.66321 12.4005 2.3323 12.0343C1.59795 11.8327 1.01962 11.239 0.823354 10.485C0.466797 9.11833 0.466797 6.26712 0.466797 6.26712C0.466797 6.26712 0.466797 3.41581 0.823354 2.04927C1.01962 1.29526 1.59795 0.701518 2.3323 0.500008C3.66321 0.133789 9.00013 0.133789 9.00013 0.133789C9.00013 0.133789 14.3371 0.133789 15.6679 0.500008ZM7.40015 3.86707V9.2004L11.6668 6.53383L7.40015 3.86707Z" fill="#2B2B2B"/>
                   </svg>
@@ -81,7 +86,26 @@
   </header>
 
     <main class="slider">
-
+          <div id="owl-carousel2" class="owl-carousel owl-theme">
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-1.png" alt="">
+            </div>
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-2.png" alt="">
+            </div>
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-3.png" alt="">
+            </div>
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-4.png" alt="">
+            </div>
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-5.png" alt="">
+            </div>
+            <div class="slide-bg item">
+              <img src="images/slider/image-slider-6.png" alt="">
+            </div>
+          </div>
     </main>
 
     <section class="testimonials">
@@ -178,9 +202,9 @@
               </p>
             </div>
             <div class="card__profile">
-              <img src="./images/alex-kiernan.png" alt="" class="card__profile-picture">
-              <h3 class="card__profile-name"> Alex Kiernan </h3>
-              <p class="card__profile-city"> Montclair / New Jersey </p>
+              <img src="./images/jennifer.jpg" alt="" class="card__profile-picture">
+              <h3 class="card__profile-name"> Jennifer Graham </h3>
+              <p class="card__profile-city"> Summit New Jersey</p>
             </div>
           </div>
           <div class="testimonials__card">
@@ -220,15 +244,70 @@
             </div>
             <div class="card__description">
               <p>
-                Anna is a wonderful photographer that we have worked with for 3+ years. She is incredible at capturing special moments that truly embody our children and family.
+                Anna is great, highly recommend! Got some amazing photos of our family, including my 4yo and dog. Doing spring session this week!
               </p>
             </div>
             <div class="card__profile">
-              <img src="./images/alex-kiernan.png" alt="" class="card__profile-picture">
-              <h3 class="card__profile-name"> Alex Kiernan </h3>
-              <p class="card__profile-city"> Montclair / New Jersey </p>
+              <img src="./images/myra.jpg" alt="" class="card__profile-picture">
+              <h3 class="card__profile-name"> Myra Deshmuk </h3>
+              <p class="card__profile-city">New Jersey </p>
             </div>
           </div>
+        </div>
+        <div class="testimonials-cards-mobile">
+          <div id="owl-carousel1" class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="testimonials__card">
+                <div class="stars">
+                  <svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_41_229" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" rx="0.5" fill="#FBB040"/>
+                    </mask>
+                    <g mask="url(#mask0_41_229)">
+                    <path d="M7.05998 21.06C6.67354 21.3541 6.13696 20.9803 6.27902 20.5159L8.04484 14.7437C8.10767 14.5384 8.03232 14.3158 7.85764 14.1908L3.26724 10.9066C2.8718 10.6237 3.07195 10 3.55817 10H9.22799C9.44879 10 9.64345 9.85517 9.7069 9.64367L11.5211 3.59638C11.6636 3.12128 12.3364 3.12128 12.4789 3.59638L14.2931 9.64367C14.3565 9.85517 14.5512 10 14.772 10H20.4418C20.9281 10 21.1282 10.6237 20.7328 10.9066L16.1424 14.1908C15.9677 14.3158 15.8923 14.5384 15.9552 14.7437L17.721 20.5159C17.863 20.9803 17.3265 21.3541 16.94 21.06L12.3028 17.5305C12.1239 17.3943 11.8761 17.3943 11.6972 17.5305L7.05998 21.06Z" fill="#FBB040"/>
+                    </g>
+                    <mask id="mask1_41_229" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="24" y="0" width="24" height="24">
+                    <rect x="24" width="24" height="24" rx="0.5" fill="#FBB040"/>
+                    </mask>
+                    <g mask="url(#mask1_41_229)">
+                    <path d="M31.06 21.06C30.6735 21.3541 30.137 20.9803 30.279 20.5159L32.0448 14.7437C32.1077 14.5384 32.0323 14.3158 31.8576 14.1908L27.2672 10.9066C26.8718 10.6237 27.0719 10 27.5582 10H33.228C33.4488 10 33.6435 9.85517 33.7069 9.64367L35.5211 3.59638C35.6636 3.12128 36.3364 3.12128 36.4789 3.59638L38.2931 9.64367C38.3565 9.85517 38.5512 10 38.772 10H44.4418C44.9281 10 45.1282 10.6237 44.7328 10.9066L40.1424 14.1908C39.9677 14.3158 39.8923 14.5384 39.9552 14.7437L41.721 20.5159C41.863 20.9803 41.3265 21.3541 40.94 21.06L36.3028 17.5305C36.1239 17.3943 35.8761 17.3943 35.6972 17.5305L31.06 21.06Z" fill="#FBB040"/>
+                    </g>
+                    <mask id="mask2_41_229" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="48" y="0" width="24" height="24">
+                    <rect x="48" width="24" height="24" rx="0.5" fill="#FBB040"/>
+                    </mask>
+                    <g mask="url(#mask2_41_229)">
+                    <path d="M55.06 21.06C54.6735 21.3541 54.137 20.9803 54.279 20.5159L56.0448 14.7437C56.1077 14.5384 56.0323 14.3158 55.8576 14.1908L51.2672 10.9066C50.8718 10.6237 51.0719 10 51.5582 10H57.228C57.4488 10 57.6435 9.85517 57.7069 9.64367L59.5211 3.59638C59.6636 3.12128 60.3364 3.12128 60.4789 3.59638L62.2931 9.64367C62.3565 9.85517 62.5512 10 62.772 10H68.4418C68.9281 10 69.1282 10.6237 68.7328 10.9066L64.1424 14.1908C63.9677 14.3158 63.8923 14.5384 63.9552 14.7437L65.721 20.5159C65.863 20.9803 65.3265 21.3541 64.94 21.06L60.3028 17.5305C60.1239 17.3943 59.8761 17.3943 59.6972 17.5305L55.06 21.06Z" fill="#FBB040"/>
+                    </g>
+                    <mask id="mask3_41_229" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="72" y="0" width="24" height="24">
+                    <rect x="72" width="24" height="24" rx="0.5" fill="#FBB040"/>
+                    </mask>
+                    <g mask="url(#mask3_41_229)">
+                    <path d="M79.06 21.06C78.6735 21.3541 78.137 20.9803 78.279 20.5159L80.0448 14.7437C80.1077 14.5384 80.0323 14.3158 79.8576 14.1908L75.2672 10.9066C74.8718 10.6237 75.0719 10 75.5582 10H81.228C81.4488 10 81.6435 9.85517 81.7069 9.64367L83.5211 3.59638C83.6636 3.12128 84.3364 3.12128 84.4789 3.59638L86.2931 9.64367C86.3565 9.85517 86.5512 10 86.772 10H92.4418C92.9281 10 93.1282 10.6237 92.7328 10.9066L88.1424 14.1908C87.9677 14.3158 87.8923 14.5384 87.9552 14.7437L89.721 20.5159C89.863 20.9803 89.3265 21.3541 88.94 21.06L84.3028 17.5305C84.1239 17.3943 83.8761 17.3943 83.6972 17.5305L79.06 21.06Z" fill="#FBB040"/>
+                    </g>
+                    <mask id="mask4_41_229" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="96" y="0" width="24" height="24">
+                    <rect x="96" width="24" height="24" rx="0.5" fill="#FBB040"/>
+                    </mask>
+                    <g mask="url(#mask4_41_229)">
+                    <path d="M103.06 21.06C102.674 21.3541 102.137 20.9803 102.279 20.5159L104.045 14.7437C104.108 14.5384 104.032 14.3158 103.858 14.1908L99.2672 10.9066C98.8718 10.6237 99.0719 10 99.5582 10H105.228C105.449 10 105.643 9.85517 105.707 9.64367L107.521 3.59638C107.664 3.12128 108.336 3.12128 108.479 3.59638L110.293 9.64367C110.357 9.85517 110.551 10 110.772 10H116.442C116.928 10 117.128 10.6237 116.733 10.9066L112.142 14.1908C111.968 14.3158 111.892 14.5384 111.955 14.7437L113.721 20.5159C113.863 20.9803 113.326 21.3541 112.94 21.06L108.303 17.5305C108.124 17.3943 107.876 17.3943 107.697 17.5305L103.06 21.06Z" fill="#FBB040"/>
+                    </g>
+                    </svg>
+                </div>
+                <div class="card__description">
+                  <p>
+                    Anna is a wonderful photographer that we have worked with for 3+ years. She is incredible at capturing special moments that truly embody our children and family.
+                  </p>
+                </div>
+                <div class="card__profile">
+                  <img src="./images/alex-kiernan.png" alt="" class="card__profile-picture">
+                  <h3 class="card__profile-name"> Alex Kiernan </h3>
+                  <p class="card__profile-city"> Montclair / New Jersey </p>
+                </div>
+              </div>
+            </div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+
+        </div>
         </div>
       </div>
     </section>
@@ -266,6 +345,30 @@
     </section>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="header.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('#owl-carousel1').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 50,
+        },
+        768: {
+          items: 2
+        },
+    }
+})
+$('#owl-carousel2').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:true,
+  items:1,
+})
+    </script>
+    <script src="js/header.js"></script>
 </body>
 </html>
