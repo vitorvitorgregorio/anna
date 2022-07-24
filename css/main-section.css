@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 24px;
+  margin: 0 40px;
   position: relative;
   bottom: 450px;
 }
@@ -54,6 +54,33 @@
 }
 
 .main-section-banner {
+  position: relative;
+  z-index: 999;
+  bottom: 150px;
+  background-color: #fff;
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e9e9e9;
+  padding: 16px 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.image-banner {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.image-banner img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.buttons-banner {
+  display: flex;
 }
