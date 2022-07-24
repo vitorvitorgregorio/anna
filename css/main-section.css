@@ -36,7 +36,7 @@
   justify-content: center;
   gap: 4px;
   position: relative;
-  bottom: 240px;
+  bottom: 250px;
 }
 #owl-carousel2 > .owl-dots > .owl-dot {
   background-color: #fff;
@@ -56,7 +56,7 @@
 .main-section-banner {
   position: relative;
   z-index: 999;
-  bottom: 150px;
+  bottom: 200px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -83,4 +83,25 @@
 }
 .buttons-banner {
   display: flex;
+  gap: 16px;
+}
+.description-banner h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+.description-banner p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #909090;
+}
+@media only screen and (max-width: 948px){
+  .main-section-banner {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px){
+  .buttons-banner {
+    flex-direction: column;
+  }
 }
