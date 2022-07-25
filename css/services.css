@@ -54,7 +54,7 @@ grid-template-areas: "card-1 card-2"
   font-size: 16px;
   line-height: 28px;
   font-weight: 500;
-  color: #909090
+  color: #909090;
 }
 .services-card-1 {grid-area: card-1;}
 .services-card-2 {
@@ -65,5 +65,4 @@ grid-template-areas: "card-1 card-2"
 .services-card-3 {
   grid-area: card-3;
   position: relative;
-  top: ;
 }
