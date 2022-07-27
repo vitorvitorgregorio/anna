@@ -44,6 +44,14 @@ grid-template-areas: "card-1 card-2"
   font-weight: 500;
   color: #909090;
 }
+.services-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.services-description > .first-btn {
+  margin-top: 16px;
+}
 .services-description h2 {
   font-size: 48px;
   line-height: 60px;

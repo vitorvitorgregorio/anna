@@ -38,3 +38,10 @@ button {
 	border: none;
 	background-color: transparent;
 }
+input:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px !important;
+}
+.form-control:focus {
+	color: black;
+	box-shadow: none;
+}
