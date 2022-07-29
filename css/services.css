@@ -8,7 +8,6 @@
   margin-bottom: 200px;
 }
 .services-cards {
-
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-areas: "card-1 card-2"
@@ -17,8 +16,8 @@ grid-template-areas: "card-1 card-2"
 .services-card {
   background-color: #fff;
   padding: 36px;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -73,4 +72,23 @@ grid-template-areas: "card-1 card-2"
 .services-card-3 {
   grid-area: card-3;
   position: relative;
+}
+@media (max-width: 1024px){
+  .services-container {
+    flex-direction: column;
+    max-height: 100%;
+  }
+  .services-cards {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card-1"
+    "card-2"
+    "card-3";
+  }
+  .services-card {
+    max-width: 326px;
+  }
+  .services-card-2,
+  .services-card-3 {
+    position: initial;
+  }
 }
